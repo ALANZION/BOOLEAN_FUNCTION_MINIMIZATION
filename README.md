@@ -16,7 +16,6 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Theory**
 
-**Logic Diagram**
 
 **Procedure**
 
@@ -35,16 +34,33 @@ Hardware – PCs, Cyclone II , USB flasher
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+Developed by: ALAN ZION H
+RegisterNumber:212223240004
+/*
+```
+module (A,B,C,D,F1);
+input A,B,C,D;
+output F1;
+wire x1,x2,x3,x4,x5;
+assign x1=(~A)&(~B)&(~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A)&(B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign F1=x1|x2|x3|x4|x5;
+endmodule
+```
+**Logic Gate**
+![image](https://github.com/ALANZION/BOOLEAN_FUNCTION_MINIMIZATION/assets/145743064/9f68ef9e-9820-4ff0-bbd7-ae64714c3177)
+
+**Waveform**
+![image](https://github.com/ALANZION/BOOLEAN_FUNCTION_MINIMIZATION/assets/145743064/f851c4e9-a05f-443d-b0d0-c74391e35dfc)
+
+**TruthTable**
+![image](https://github.com/ALANZION/BOOLEAN_FUNCTION_MINIMIZATION/assets/145743064/1898920b-e32e-44a1-8d01-0dc528cbe4c3)
 
 
-**RTL realization**
 
-**Output:**
-
-**RTL**
-
-**Timing Diagram**
 
 **Result:**
 
