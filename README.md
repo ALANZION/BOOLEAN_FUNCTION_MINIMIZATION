@@ -50,13 +50,14 @@ assign x5=(B)&(~C)&(D);
 assign F1=x1|x2|x3|x4|x5;
 endmodule
 ```
+
 **Output**
+
 ![image](https://github.com/ALANZION/BOOLEAN_FUNCTION_MINIMIZATION/assets/145743064/04f3f92f-e2ba-4b8f-a9f6-84d33a7e12fc)
 
+**Waveform**
 
 ![image](https://github.com/ALANZION/BOOLEAN_FUNCTION_MINIMIZATION/assets/145743064/1898920b-e32e-44a1-8d01-0dc528cbe4c3)
-
-
 
 
 **Result:**
