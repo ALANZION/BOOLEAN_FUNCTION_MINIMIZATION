@@ -16,6 +16,7 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Theory**
 
+**Logic Diagram**
 
 **Procedure**
 
@@ -31,14 +32,13 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
-
+```
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: ALAN ZION H
+Developed by:ALAN ZION H
 RegisterNumber:212223240004
-/*
-```
-module (A,B,C,D,F1);
+
+module combinationalcircuit(A,B,C,D,F1);
 input A,B,C,D;
 output F1;
 wire x1,x2,x3,x4,x5;
@@ -48,19 +48,17 @@ assign x3=(~B)&(C)&(~D);
 assign x4=(~A)&(B)&(C)&(D);
 assign x5=(B)&(~C)&(D);
 assign F1=x1|x2|x3|x4|x5;
-endmodule
+endmodule 
 ```
 
-**Output**
+**Output:**
 
-![image](https://github.com/ALANZION/BOOLEAN_FUNCTION_MINIMIZATION/assets/145743064/04f3f92f-e2ba-4b8f-a9f6-84d33a7e12fc)
+**RTL realization**
+![Screenshot 2024-03-24 141634](https://github.com/MOHAMEDRIDWAN/BOOLEAN_FUNCTION_MINIMIZATION/assets/146993368/62ea4916-36fc-4e78-b4b0-90848ff33935)
 
-**Waveform**
-
-![image](https://github.com/ALANZION/BOOLEAN_FUNCTION_MINIMIZATION/assets/145743064/1898920b-e32e-44a1-8d01-0dc528cbe4c3)
-
+**Timing Diagram**
+![Screenshot 2024-03-24 142440](https://github.com/MOHAMEDRIDWAN/BOOLEAN_FUNCTION_MINIMIZATION/assets/146993368/a1dfc5c5-20ae-457a-b244-ff068731e791)
 
 **Result:**
 
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
-
